@@ -483,3 +483,158 @@ input::placeholder{
     var(--green);
 
 }
+/* =========================
+   Animation
+========================= */
+
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+
+    }
+
+}
+
+
+/* =========================
+   Loading Glow
+========================= */
+
+
+.card:hover,
+#libraryPage:hover,
+#statsPage:hover{
+
+    box-shadow:
+
+    0 15px 45px
+    rgba(57,181,255,.25);
+
+}
+
+
+/* =========================
+   Responsive Mobile
+========================= */
+
+
+@media(max-width:700px){
+
+
+    .app{
+
+        width:92%;
+
+        margin:
+        20px auto;
+
+    }
+
+
+    header h1{
+
+        font-size:30px;
+
+    }
+
+
+    nav{
+
+        flex-direction:
+
+        column;
+
+    }
+
+
+    nav button{
+
+        width:100%;
+
+    }
+
+
+    .card{
+
+        padding:25px;
+
+    }
+
+
+    .card h2{
+
+        font-size:25px;
+
+    }
+
+
+    .stats{
+
+        grid-template-columns:
+
+        1fr;
+
+    }
+
+
+    .addBox{
+
+        flex-direction:
+
+        column;
+
+    }
+
+
+}
+
+
+/* =========================
+   Scrollbar
+========================= */
+
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+
+::-webkit-scrollbar-track{
+
+    background:#07111f;
+
+}
+
+
+::-webkit-scrollbar-thumb{
+
+    background:#39b5ff;
+
+    border-radius:20px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#6bd4ff;
+
+}
