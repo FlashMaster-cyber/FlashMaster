@@ -102,3 +102,78 @@ function submitAnswer(){
     input.value="";
 
 }
+// ===============================
+// Button Events
+// ===============================
+
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+
+
+        const checkButton =
+        document.getElementById(
+            "checkBtn"
+        );
+
+
+        if(checkButton){
+
+            checkButton.onclick =
+            submitAnswer;
+
+        }
+
+
+
+        const addButton =
+        document.getElementById(
+            "addWord"
+        );
+
+
+        if(addButton){
+
+            addButton.onclick =
+            function(){
+
+                const english =
+                document.getElementById(
+                    "english"
+                ).value;
+
+
+                const vietnamese =
+                document.getElementById(
+                    "vietnamese"
+                ).value;
+
+
+                if(
+                    english &&
+                    vietnamese
+                ){
+
+                    addWord(
+                        english,
+                        vietnamese
+                    );
+
+
+                    alert(
+                        "Đã thêm từ mới!"
+                    );
+
+
+                    generateCard();
+
+                }
+
+            };
+
+        }
+
+
+    }
+);
