@@ -19,6 +19,8 @@ document.addEventListener(
 
         initApp();
 
+        setupButtons();
+
     }
 );
 
@@ -102,9 +104,9 @@ function submitAnswer(){
     input.value="";
 
 }
-// ===============================
+// =============================
 // Button Events
-// ===============================
+// =============================
 
 
 document.addEventListener(
@@ -113,9 +115,9 @@ document.addEventListener(
 
 
         const checkButton =
-        document.getElementById(
-            "checkBtn"
-        );
+            document.getElementById(
+                "checkBtn"
+            );
 
 
         if(checkButton){
