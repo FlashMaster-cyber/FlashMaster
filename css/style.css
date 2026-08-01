@@ -300,3 +300,186 @@ input::placeholder{
     min-height:25px;
 
 }
+/* =========================
+   Hidden Pages
+========================= */
+
+.hidden{
+
+    display:none;
+
+}
+
+
+/* =========================
+   Library
+========================= */
+
+
+#libraryPage,
+#statsPage{
+
+    background:
+    rgba(255,255,255,.08);
+
+    backdrop-filter:
+    blur(15px);
+
+    border:
+    1px solid rgba(255,255,255,.12);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:
+    var(--shadow);
+
+    animation:
+    fadeIn .6s ease;
+
+}
+
+
+#libraryPage h2,
+#statsPage h2{
+
+    text-align:center;
+
+    color:
+    var(--blue2);
+
+    margin-bottom:25px;
+
+}
+
+
+/* Add Word Box */
+
+.addBox{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:30px;
+
+}
+
+
+.addBox input{
+
+    flex:1;
+
+    min-width:200px;
+
+}
+
+
+.addBox button{
+
+    min-width:120px;
+
+}
+
+
+/* Word List */
+
+
+#wordList{
+
+    display:grid;
+
+    gap:15px;
+
+}
+
+
+.word{
+
+    background:
+    rgba(255,255,255,.1);
+
+    padding:20px;
+
+    border-radius:15px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    transition:.3s;
+
+}
+
+
+.word:hover{
+
+    transform:
+    translateX(8px);
+
+    background:
+    rgba(255,255,255,.18);
+
+}
+
+
+.word span{
+
+    color:
+    var(--blue2);
+
+    font-weight:bold;
+
+}
+
+
+/* =========================
+   Statistics
+========================= */
+
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+
+.stats div{
+
+    background:
+    rgba(255,255,255,.1);
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    font-size:20px;
+
+}
+
+
+.stats span{
+
+    display:block;
+
+    margin-top:15px;
+
+    font-size:35px;
+
+    color:
+    var(--green);
+
+}
