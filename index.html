@@ -8,3 +8,207 @@
     <h1>🚀 FlashMaster đang được xây dựng...</h1>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>FlashMaster</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<header>
+
+<h1>📚 FlashMaster</h1>
+
+<p>
+Learn English Like A Game
+</p>
+
+</header>
+
+<nav>
+
+<button id="learnBtn">
+
+📖 Học
+
+</button>
+
+<button id="libraryBtn">
+
+📚 Thư viện
+
+</button>
+
+<button id="statsBtn">
+
+📊 Thống kê
+
+</button>
+
+<button id="settingBtn">
+
+⚙ Cài đặt
+
+</button>
+
+</nav>
+
+<main>
+
+<section
+id="learnPage">
+
+<div class="card">
+
+<h2 id="question">
+
+Waiting...
+
+</h2>
+
+<input
+
+type="text"
+
+id="answer"
+
+placeholder="Nhập đáp án..."
+
+>
+
+<button
+id="checkBtn">
+
+Kiểm tra
+
+</button>
+
+<p id="message">
+
+</p>
+
+</div>
+
+</section>
+
+<section
+id="libraryPage"
+class="hidden">
+
+<h2>
+
+Danh sách từ
+
+</h2>
+
+<div
+class="addBox">
+
+<input
+
+id="english"
+
+placeholder="English">
+
+<input
+
+id="vietnamese"
+
+placeholder="Tiếng Việt">
+
+<button
+id="addWord">
+
+Thêm
+
+</button>
+
+</div>
+
+<div
+id="wordList">
+
+</div>
+
+</section>
+
+<section
+id="statsPage"
+class="hidden">
+
+<h2>
+
+Thống kê
+
+</h2>
+
+<div
+class="stats">
+
+<div>
+
+Đúng
+
+<span id="correct">
+
+0
+
+</span>
+
+</div>
+
+<div>
+
+Sai
+
+<span id="wrong">
+
+0
+
+</span>
+
+</div>
+
+<div>
+
+Combo
+
+<span id="combo">
+
+0
+
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="js/storage.js"></script>
+
+<script src="js/flashcard.js"></script>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
