@@ -80,3 +80,20 @@ function checkAnswer(answer){
     return false;
 
 }
+// Thêm từ mới
+
+function addWord(english, vietnamese){
+
+    const data = getData();
+
+    data.words.push({
+
+        english: english,
+
+        vietnamese: vietnamese
+
+    });
+
+    saveData(data);
+
+}
