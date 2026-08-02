@@ -133,6 +133,8 @@ function updateStats(type){
 
     saveData(data);
 
+   loadStats();
+
 }
 // Hiển thị thống kê
 
