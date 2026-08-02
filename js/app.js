@@ -179,3 +179,77 @@ document.addEventListener(
 
     }
 );
+// =============================
+// Navigation
+// =============================
+
+function setupButtons(){
+
+    const learnBtn =
+        document.getElementById("learnBtn");
+
+    const libraryBtn =
+        document.getElementById("libraryBtn");
+
+    const statsBtn =
+        document.getElementById("statsBtn");
+
+
+    const learnPage =
+        document.getElementById("learnPage");
+
+    const libraryPage =
+        document.getElementById("libraryPage");
+
+    const statsPage =
+        document.getElementById("statsPage");
+
+
+    function hideAll(){
+
+        learnPage.classList.add("hidden");
+        libraryPage.classList.add("hidden");
+        statsPage.classList.add("hidden");
+
+    }
+
+
+    if(learnBtn){
+
+        learnBtn.onclick = function(){
+
+            hideAll();
+
+            learnPage.classList.remove("hidden");
+
+        };
+
+    }
+
+
+    if(libraryBtn){
+
+        libraryBtn.onclick = function(){
+
+            hideAll();
+
+            libraryPage.classList.remove("hidden");
+
+        };
+
+    }
+
+
+    if(statsBtn){
+
+        statsBtn.onclick = function(){
+
+            hideAll();
+
+            statsPage.classList.remove("hidden");
+
+        };
+
+    }
+
+}
