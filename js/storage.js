@@ -134,3 +134,40 @@ function updateStats(type){
     saveData(data);
 
 }
+// Hiển thị thống kê
+
+function loadStats(){
+
+    const data = getData();
+
+    const correct =
+        document.getElementById("correct");
+
+    const wrong =
+        document.getElementById("wrong");
+
+    const combo =
+        document.getElementById("combo");
+
+    if(correct){
+
+        correct.innerText =
+            data.stats.correct;
+
+    }
+
+    if(wrong){
+
+        wrong.innerText =
+            data.stats.wrong;
+
+    }
+
+    if(combo){
+
+        combo.innerText =
+            data.stats.combo;
+
+    }
+
+}
