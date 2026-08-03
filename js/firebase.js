@@ -9,17 +9,17 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/12.1.0/firebase
 // Firebase Config
 const firebaseConfig = {
 
-    apiKey: "API_KEY",
+    apiKey: "AIzaSyBm88mvoPiDw3UhkgUlwJDJ_lXk1NkRqM4",
 
-    authDomain: "AUTH_DOMAIN",
+    authDomain: "flashmaster-687fc.firebaseapp.com",
 
-    projectId: "PROJECT_ID",
+    projectId: "flashmaster-687fc",
 
-    storageBucket: "STORAGE_BUCKET",
+    storageBucket: "flashmaster-687fc.firebasestorage.app",
 
-    messagingSenderId: "SENDER_ID",
+    messagingSenderId: "84917654332",
 
-    appId: "APP_ID"
+    appId: "1:84917654332:web:7be86ecc60309c1d630439",
 
 };
 
