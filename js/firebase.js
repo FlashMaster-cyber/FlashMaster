@@ -41,10 +41,3 @@ window.firebaseAuth = auth;
 window.firebaseDB = db;
 
 console.log("Firebase Connected!");
-
-const db = getFirestore(app);
-
-window.db = db;
-window.doc = doc;
-window.setDoc = setDoc;
-window.getDoc = getDoc;
