@@ -38,3 +38,16 @@ window.firebaseAuth = auth;
 window.firebaseDB = db;
 
 console.log("Firebase Connected!");
+import {
+    getFirestore,
+    doc,
+    setDoc,
+    getDoc
+} from "https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore.js";
+
+const db = getFirestore(app);
+
+window.db = db;
+window.doc = doc;
+window.setDoc = setDoc;
+window.getDoc = getDoc;
