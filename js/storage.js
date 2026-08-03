@@ -133,6 +133,8 @@ function updateStats(type){
 
     saveData(data);
 
+    cloudSave();
+
    loadStats();
 
 }
@@ -171,5 +173,30 @@ function loadStats(){
             data.stats.combo;
 
     }
+
+}
+// Lưu dữ liệu lên Firebase
+
+async function cloudSave(){
+
+    const user = window.auth.currentUser;
+
+    if(!user){
+
+        return;
+
+    }
+
+    await setDoc(
+
+        doc(
+            db,
+            "users",
+            user.uid
+        ),
+
+        getData()
+
+    );
 
 }
