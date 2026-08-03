@@ -6,49 +6,37 @@ import {
 
 const auth = window.firebaseAuth;
 
-// Đăng ký
-window.register = async function(email, password){
+document.getElementById("registerBtn").onclick = async () => {
+
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
 
     try{
-
         await createUserWithEmailAndPassword(auth, email, password);
-
         alert("Đăng ký thành công!");
-
-    }
-
-    catch(error){
-
-        alert(error.message);
-
+    }catch(e){
+        alert(e.message);
     }
 
 };
 
-// Đăng nhập
-window.login = async function(email, password){
+document.getElementById("loginBtn").onclick = async () => {
+
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
 
     try{
-
         await signInWithEmailAndPassword(auth, email, password);
-
         alert("Đăng nhập thành công!");
-
-    }
-
-    catch(error){
-
-        alert(error.message);
-
+    }catch(e){
+        alert(e.message);
     }
 
 };
 
-// Đăng xuất
-window.logout = async function(){
+document.getElementById("logoutBtn").onclick = async () => {
 
     await signOut(auth);
-
     alert("Đã đăng xuất");
 
 };
