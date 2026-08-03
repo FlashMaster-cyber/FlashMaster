@@ -638,3 +638,12 @@ input::placeholder{
     background:#6bd4ff;
 
 }
+.warning{
+
+    color:#ff69b4;
+
+    font-size:14px;
+
+    margin-bottom:15px;
+
+}
