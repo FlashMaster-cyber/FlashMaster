@@ -3,8 +3,12 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebas
 
 import { getAuth } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
 
-import { getFirestore } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
-
+import {
+    getFirestore,
+    doc,
+    setDoc,
+    getDoc
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
 
 // Firebase Config
 const firebaseConfig = {
@@ -39,5 +43,8 @@ window.db = db;
 window.firebaseAuth = auth;
 
 window.firebaseDB = db;
+window.doc = doc;
+window.setDoc = setDoc;
+window.getDoc = getDoc;
 
 console.log("Firebase Connected!");
