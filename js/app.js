@@ -33,6 +33,8 @@ function initApp(){
     loadStats();
 
     generateCard();
+   
+    renderLibrary();
 
 
     const nextButton =
