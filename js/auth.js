@@ -25,10 +25,19 @@ document.getElementById("loginBtn").onclick = async () => {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    try{
-        await signInWithEmailAndPassword(auth, email, password);
-        alert("Đăng nhập thành công!");
-    }catch(e){
+   try{
+
+    await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+    );
+
+    await cloudLoad();
+
+    alert("Đăng nhập thành công!");
+
+}catch(e){
         alert(e.message);
     }
 
