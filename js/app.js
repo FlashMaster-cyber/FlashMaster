@@ -163,19 +163,18 @@ document.addEventListener(
                     vietnamese
                 ){
 
-                    addWord(
-                        english,
-                        vietnamese
-                    );
+                   addWord(
+    english,
+    vietnamese
+);
 
+renderLibrary();
 
-                    alert(
-                        "Đã thêm từ mới!"
-                    );
+alert(
+    "Đã thêm từ mới!"
+);
 
-
-                    generateCard();
-
+generateCard();
                 }
 
             };
@@ -291,5 +290,46 @@ function setupButtons(){
         };
 
     }
+
+}
+function renderLibrary(){
+
+    const wordList =
+        document.getElementById("wordList");
+
+    if(!wordList) return;
+
+    const data = getData();
+
+    wordList.innerHTML = "";
+
+    data.words.forEach((word,index)=>{
+
+        wordList.innerHTML += `
+            <div class="wordItem">
+
+                <span>
+                    ${word.english}
+                    -
+                    ${word.vietnamese}
+                </span>
+
+                <button onclick="deleteWord(${index})">
+                    🗑️
+                </button>
+
+            </div>
+        `;
+
+    });
+
+}
+function deleteWord(index){
+
+    removeWord(index);
+
+    renderLibrary();
+
+    generateCard();
 
 }
