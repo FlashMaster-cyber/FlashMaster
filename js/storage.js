@@ -204,26 +204,3 @@ async function cloudSave(){
     );
 
 }
-async function cloudSave(){
-
-    const user = window.firebaseAuth.currentUser;
-
-    if(!user) return;
-
-    const data = getData();
-
-    await window.setDoc(
-
-        window.doc(
-            window.firebaseDB,
-            "users",
-            user.uid
-        ),
-
-        data
-
-    );
-
-    console.log("Cloud Saved!");
-
-}
