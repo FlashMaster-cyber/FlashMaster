@@ -204,3 +204,31 @@ async function cloudSave(){
     );
 
 }
+async function cloudLoad(){
+
+    const user = window.firebaseAuth.currentUser;
+
+    if(!user) return;
+
+    const docRef = window.doc(
+        window.firebaseDB,
+        "users",
+        user.uid
+    );
+
+    const docSnap =
+        await window.getDoc(docRef);
+
+    if(docSnap.exists()){
+
+        saveData(docSnap.data());
+
+        loadStats();
+
+        generateCard();
+
+        console.log("Cloud Loaded!");
+
+    }
+
+}
