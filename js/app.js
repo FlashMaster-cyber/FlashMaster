@@ -189,44 +189,6 @@ generateCard();
 
 
 
-    if(learnBtn){
-
-        learnBtn.onclick = function(){
-
-            hideAll();
-
-            learnPage.classList.remove("hidden");
-
-        };
-
-    }
-
-
-    if(libraryBtn){
-
-        libraryBtn.onclick = function(){
-
-            hideAll();
-
-            libraryPage.classList.remove("hidden");
-
-        };
-
-    }
-
-
-    if(statsBtn){
-
-        statsBtn.onclick = function(){
-
-            hideAll();
-
-            statsPage.classList.remove("hidden");
-
-        };
-
-    }
-
 // =============================
 // Navigation
 // =============================
