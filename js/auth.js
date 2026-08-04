@@ -46,6 +46,9 @@ document.getElementById("loginBtn").onclick = async () => {
 document.getElementById("logoutBtn").onclick = async () => {
 
     await signOut(auth);
-    alert("Đã đăng xuất");
+
+    localStorage.removeItem("flashmaster_data");
+
+    location.reload();
 
 };
