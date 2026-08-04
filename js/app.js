@@ -100,7 +100,13 @@ function submitAnswer(){
 
     }
 
+setTimeout(() => {
 
+    generateCard();
+    answer.value = "";
+    message.innerText = "";
+
+}, 1000);
     input.value="";
 
 }
