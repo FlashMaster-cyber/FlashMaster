@@ -339,3 +339,8 @@ function editWord(index){
     generateCard();
 
 }
+function editWord(index){
+
+    alert("Edit hoạt động!");
+
+}
