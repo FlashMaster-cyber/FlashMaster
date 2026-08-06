@@ -173,7 +173,7 @@ document.addEventListener(
 renderLibrary();
 
 alert(
-    "Đã thêm từ mới!"
+    "Thêm vào cuộc đời rẻ rách của m 1 thiên phú giao tiếp mới!"
 );
 
 generateCard();
@@ -341,6 +341,36 @@ function editWord(index){
 }
 function editWord(index){
 
-    alert("Edit hoạt động!");
+    const data = getData();
+
+    const word = data.words[index];
+
+    const english = prompt(
+        "English:",
+        word.english
+    );
+
+    if(english === null) return;
+
+    const vietnamese = prompt(
+        "Tiếng Việt:",
+        word.vietnamese
+    );
+
+    if(vietnamese === null) return;
+
+    data.words[index].english = english;
+
+    data.words[index].vietnamese = vietnamese;
+
+    saveData(data);
+
+    cloudSave();
+
+    renderLibrary();
+
+    generateCard();
+
+    alert("sữa từ thành công kkk!");
 
 }
