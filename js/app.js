@@ -283,6 +283,9 @@ function renderLibrary(){
                 <button onclick="editWord(${index})">
                     ✏️
                 </button>
+                <button onclick="deleteWord(${index})">
+    🗑️
+</button>
 
             </div>
         `;
