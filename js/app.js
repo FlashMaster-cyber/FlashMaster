@@ -177,6 +177,9 @@ alert(
 );
 
 generateCard();
+                   document.getElementById("english").value = "";
+
+document.getElementById("vietnamese").value = "";
                 }
 
             };
