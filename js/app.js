@@ -300,3 +300,42 @@ function deleteWord(index){
     generateCard();
 
 }
+function editWord(index){
+
+    const data = getData();
+
+    const word = data.words[index];
+
+    const newEnglish = prompt(
+        "English:",
+        word.english
+    );
+
+    if(newEnglish === null) return;
+
+    const newVietnamese = prompt(
+        "Tiếng Việt:",
+        word.vietnamese
+    );
+
+    if(newVietnamese === null) return;
+
+    data.words[index] = {
+
+        ...word,
+
+        english: newEnglish,
+
+        vietnamese: newVietnamese
+
+    };
+
+    saveData(data);
+
+    cloudSave();
+
+    renderLibrary();
+
+    generateCard();
+
+}
