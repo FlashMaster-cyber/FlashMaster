@@ -276,6 +276,10 @@ function renderLibrary(){
                     -
                     ${word.vietnamese}
                 </span>
+                
+                <button onclick="editWord(${index})">
+          ✏️
+      </button>
 
                 <button onclick="deleteWord(${index})">
                     🗑️
