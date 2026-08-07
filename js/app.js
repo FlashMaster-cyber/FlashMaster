@@ -134,6 +134,25 @@ document.addEventListener(
             submitAnswer;
 
         }
+       const answerInput =
+    document.getElementById("answer");
+
+if(answerInput){
+
+    answerInput.addEventListener(
+        "keydown",
+        function(event){
+
+            if(event.key === "Enter"){
+
+                submitAnswer();
+
+            }
+
+        }
+    );
+
+}
 
 
 
