@@ -35,6 +35,17 @@ function initApp(){
     generateCard();
    
     renderLibrary();
+const searchInput =
+    document.getElementById("searchWord");
+
+if(searchInput){
+
+    searchInput.addEventListener(
+        "input",
+        renderLibrary
+    );
+
+}
 
 
     const nextButton =
@@ -365,16 +376,5 @@ function editWord(index){
     generateCard();
 
     alert("sữa từ thành công kkk!");
-
-}
-const searchInput =
-    document.getElementById("searchWord");
-
-if(searchInput){
-
-    searchInput.addEventListener(
-        "input",
-        renderLibrary
-    );
 
 }
