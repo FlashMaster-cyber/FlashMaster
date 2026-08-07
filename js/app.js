@@ -285,10 +285,20 @@ function renderLibrary(){
     if(!wordList) return;
 
     const data = getData();
+   const keyword =
+    document.getElementById("searchWord")
+    ?.value
+    .toLowerCase() || "";
 
     wordList.innerHTML = "";
 
     data.words.forEach((word,index)=>{
+        if(
+        !word.english.toLowerCase().includes(keyword) &&
+        !word.vietnamese.toLowerCase().includes(keyword)
+    ){
+        return;
+    }
 
         wordList.innerHTML += `
             <div class="wordItem">
