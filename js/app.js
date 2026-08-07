@@ -405,3 +405,14 @@ function editWord(index){
     alert("sữa từ thành công kkk!");
 
 }
+const searchInput =
+    document.getElementById("searchWord");
+
+if(searchInput){
+
+    searchInput.addEventListener(
+        "input",
+        renderLibrary
+    );
+
+}
