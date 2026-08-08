@@ -21,7 +21,7 @@ const defaultData = {
 
         wrong:0,
 
-        combo:0
+        combo:0,
         
            xp:0,
 
