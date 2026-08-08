@@ -22,6 +22,10 @@ const defaultData = {
         wrong:0,
 
         combo:0
+        
+           xp:0,
+
+          level:1
 
     }
 
